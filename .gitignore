@@ -1,8 +1,13 @@
 # Arquivos
 test.py
 setup.py
+logo.ico
+app.spec
+comandos
 
 # Diretórios
 __pycache__/
 venv/
 dev/
+build/
+dist/

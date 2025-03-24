@@ -64,11 +64,14 @@ while True:
         print(f"Existem {contador} exames pendentes")
         for chat in chat_ids:
             print(f"Enviando para: {chat[0]}")
-            bot.send_message(chat[1], f"Iniciando automação {date_time}")
+            bot.send_message(chat[1], f"Existem {contador} exames pendentes")
 
-    time.sleep(1800)
+    print("\nAguardando 5 minutos para a próxima verificação\n")
+    time.sleep(300)
+
     print("==== Refresh ====")
     now = datetime.now()
     date_time = now.strftime("%d/%m/%Y | %H:%M:%S")
     print(date_time)
+    
     navegador.refresh()
