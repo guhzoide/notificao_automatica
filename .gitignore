@@ -1,0 +1,7 @@
+# Arquivos
+test.py
+setup.py
+
+# Diretórios
+__pycache__/
+venv/
