@@ -1,6 +1,8 @@
 # Arquivos
 test.py
 setup.py
+app_linux.py
+app_windows.py
 
 # Diretórios
 __pycache__/
