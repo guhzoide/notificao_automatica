@@ -2,7 +2,7 @@ import time
 import telebot
 from datetime import datetime
 from selenium import webdriver
-from bin.setup import BOT_TOKEN, BOT_CHAT_ID, URL
+from bin.setup import BOT_TOKEN, BOT_CHAT_ID, URL, USERS
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -28,8 +28,8 @@ for chat in chat_ids:
     bot.send_message(chat[1], f"Iniciando automação {date_time}")
 
 print("==== Fazendo login ====")
-navegador.find_element(By.ID, 'input-14').send_keys("06004387916")
-navegador.find_element(By.ID, 'input-18').send_keys("senha#conceitos")
+navegador.find_element(By.ID, 'input-14').send_keys(USERS['user'])
+navegador.find_element(By.ID, 'input-18').send_keys(USERS['pass'])
 lista_botoes = navegador.find_elements(By.CLASS_NAME, 'v-btn__content')
 
 for botao in lista_botoes:
